@@ -1,10 +1,10 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: ppluto-main-service
+  name: ppluto-homepage-service
 spec:
   selector:
-    app: ppluto-main
+    app: ppluto-homepage
   ports:
     - name: web
       port: 80

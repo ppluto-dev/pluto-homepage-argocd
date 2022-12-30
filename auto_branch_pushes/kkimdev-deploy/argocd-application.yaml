@@ -7,7 +7,7 @@ spec:
   source:
     repoURL: https://github.com/ppluto-dev/pluto-homepage-argocd.git
     # TODO: Update path automatically.
-    path: auto_branch_pushes/main/overlays/prod_generated
+    path: auto_branch_pushes/kkimdev-deploy/overlays/prod_generated
     targetRevision: HEAD
   destination:
     # TODO: This has to be `argocd` for ArgoCD's app of apps to work, which is
