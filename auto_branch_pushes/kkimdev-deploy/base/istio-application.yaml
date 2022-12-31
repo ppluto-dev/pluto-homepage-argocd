@@ -16,7 +16,7 @@ spec:
       values: ""
       parameters:
         - name: defaultRevision
-          value: canary
+          value: default
   destination:
     name: ""
     namespace: istio-system
