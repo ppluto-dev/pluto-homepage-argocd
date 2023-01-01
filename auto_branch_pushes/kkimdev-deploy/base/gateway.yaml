@@ -27,7 +27,7 @@ spec:
       allowedRoutes:
         namespaces:
           from: All
-#       tls: {}
+      tls: {}
 #       tls:
 #         mode: Terminate
 #         certificateRefs:
