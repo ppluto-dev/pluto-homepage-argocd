@@ -5,6 +5,6 @@ resources:
   - service.yaml
   - deployment.yaml
   - traefik-application.yaml
-  # - cert-manager-application.yaml
-#   - istio-application.yaml
-#   - istiod-application.yaml
+  - cert-manager-application.yaml
+  - istio-application.yaml
+  - istiod-application.yaml
