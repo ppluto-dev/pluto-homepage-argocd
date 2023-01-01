@@ -1,0 +1,21 @@
+project: default
+source:
+  repoURL: 'https://traefik.github.io/charts'
+  targetRevision: 20.8.0
+  helm:
+    parameters:
+      - name: defaultRevision
+        value: default
+      - name: experimental.kubernetesGateway.enabled
+        value: 'true'
+  chart: traefik
+destination:
+  server: 'https://kubernetes.default.svc'
+  namespace: argocd
+syncPolicy:
+  automated:
+    prune: true
+    selfHeal: true
+  syncOptions:
+    - CreateNamespace=true
+    - PrunePropagationPolicy=foreground
