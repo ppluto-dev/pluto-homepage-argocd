@@ -1,12 +1,7 @@
 kind: Kustomization
 apiVersion: kustomize.config.k8s.io/v1beta1
 resources:
-#   - gateway.yaml
-#   - service.yaml
-#   - deployment.yaml
   - envoy-gateway.yaml
-  - envoy-gateway-quickstart.yaml
-#   - traefik-application.yaml
-#   - cert-manager-application.yaml
-#   - istio-application.yaml
-#   - istiod-application.yaml
+  - gateway.yaml
+  - service.yaml
+  - deployment.yaml
