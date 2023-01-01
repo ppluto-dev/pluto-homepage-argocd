@@ -8,6 +8,8 @@ source:
         value: default
       - name: experimental.kubernetesGateway.enabled
         value: 'true'
+      - name: providers.kubernetesgateway
+        value: 'true'
   chart: traefik
 destination:
   server: 'https://kubernetes.default.svc'
