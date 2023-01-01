@@ -5,5 +5,5 @@ resources:
   - service.yaml
   - deployment.yaml
   # - cert-manager-application.yaml
-  - istio-application.yaml
-  - istiod-application.yaml
+#   - istio-application.yaml
+#   - istiod-application.yaml
