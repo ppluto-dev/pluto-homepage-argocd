@@ -1,0 +1,10 @@
+[
+  {
+    "unix_timestamp": 1672611670,
+    "iso_string": "2023-01-01T22:21:10.000Z",
+    "git_revision_sha1": "879a3f3036a961c9b95569c84b953bbe89c623ae",
+    "git_revision_count": "53",
+    "git_branch": "main",
+    "prod_image_tag": "879a3f3036a961c9b95569c84b953bbe89c623ae"
+  }
+]
