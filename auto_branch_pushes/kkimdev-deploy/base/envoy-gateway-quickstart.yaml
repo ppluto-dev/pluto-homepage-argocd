@@ -22,7 +22,7 @@ kind: Gateway
 metadata:
   name: eg2
 spec:
-  gatewayClassName: eg2
+  gatewayClassName: eg
   listeners:
     - name: http-web
       port: 80
