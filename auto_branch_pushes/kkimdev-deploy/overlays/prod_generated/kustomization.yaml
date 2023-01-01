@@ -3,5 +3,5 @@ kind: Kustomization
 resources:
 - ../../base
 images:
-- name: registry.gitlab.com/ppluto-dev/ppluto-main/homepage
-  newTag: "47"
+- name: registry.gitlab.com/ppluto-dev/ppluto-homepage/prod-client
+  newTag: 99b04ebcb4557c5034cd7bed8fd869da6270d9b5
