@@ -30,5 +30,13 @@
     "git_revision_count": "48",
     "git_branch": "kkimdev-deploy",
     "prod_image_tag": "99b04ebcb4557c5034cd7bed8fd869da6270d9b5"
+  },
+  {
+    "unix_timestamp": 1672610703,
+    "iso_string": "2023-01-01T22:05:03.000Z",
+    "git_revision_sha1": "ac241a332bb38d8b1fbe805fb4e3aed9f7af6dce",
+    "git_revision_count": "49",
+    "git_branch": "kkimdev-deploy",
+    "prod_image_tag": "ac241a332bb38d8b1fbe805fb4e3aed9f7af6dce"
   }
 ]
