@@ -14,7 +14,76 @@ spec:
   listeners:
     - name: http
       protocol: HTTP
+      port: 8080
+
+---
+apiVersion: gateway.networking.k8s.io/v1beta1
+kind: Gateway
+metadata:
+  name: eg2
+spec:
+  gatewayClassName: eg2
+  listeners:
+    - name: http-web
       port: 80
+      protocol: HTTP
+#       allowedRoutes:
+#         namespaces:
+#           from: All
+---
+kind: HTTPRoute
+apiVersion: gateway.networking.k8s.io/v1beta1
+metadata:
+  name: http-web-route
+spec:
+  parentRefs:
+    - name: eg2
+      sectionName: http-web
+  rules:
+    - matches:
+        - path:
+            type: PathPrefix
+            value: /
+      backendRefs:
+        - name: ppluto-homepage-service
+          port: 80
+
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: ppluto-homepage-service
+spec:
+  selector:
+    app: ppluto-homepage
+  ports:
+    - name: web
+      port: 80
+      protocol: TCP
+      targetPort: 3000
+---
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: ppluto-homepage
+spec:
+  selector:
+    matchLabels:
+      app: ppluto-homepage
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: ppluto-homepage
+    spec:
+      containers:
+        - name: ppluto-homepage
+          image: registry.gitlab.com/ppluto-dev/ppluto-main/homepage:UNSPECIFIED
+          ports:
+            - containerPort: 3000
+      imagePullSecrets:
+        - name: gitlab-container-registry
+
 ---
 apiVersion: gateway.networking.k8s.io/v1beta1
 kind: HTTPRoute
