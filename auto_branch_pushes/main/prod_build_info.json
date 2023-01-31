@@ -94,5 +94,13 @@
     "git_revision_count": "88",
     "git_branch": "main",
     "prod_image_tag": "5b61f8503a1132c21aba7646b93e769c0679daa0"
+  },
+  {
+    "unix_timestamp": 1675152868,
+    "iso_string": "2023-01-31T08:14:28.000Z",
+    "git_revision_sha1": "0d33392b4a04e223818f6a0ead88f78e2a32dec6",
+    "git_revision_count": "90",
+    "git_branch": "main",
+    "prod_image_tag": "0d33392b4a04e223818f6a0ead88f78e2a32dec6"
   }
 ]
