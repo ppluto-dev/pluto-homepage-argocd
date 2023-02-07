@@ -4,5 +4,5 @@ resources:
 - ../../base
 images:
 - name: registry.gitlab.com/ppluto-dev/ppluto-main/homepage
-  newTag: kkimdev/deploy
+  newTag: 43508facbb98160bf4761ff5dc59ff2bf0e39f821ed55d1241472606407a0356
 
