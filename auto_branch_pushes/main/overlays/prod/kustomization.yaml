@@ -4,5 +4,5 @@ resources:
 - ../../base
 images:
 - name: registry.gitlab.com/ppluto-dev/ppluto-main/homepage
-  newTag: 8dd36c80921ade27955ed79451f2cfd90b2c3db3785f06326bd2d0bca1afd7a4
+  newTag: df4a2ba1673b19ebc447812eb71cbdd73cf7bef544427fce0c0d7b4bba684a06
 
